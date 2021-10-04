@@ -10,64 +10,43 @@
     font-family: inherit;
     font-style: inherit;
     font-size: 100%;
+    list-style: none;
 }
-
-/*Para a Página Clip configurei a Body para o tamanho máximo permitido na visualização da tela*/
-/*
-.bodyclip{
-    width: 100vw;
-    height: 100vh;
-}*/
-/*Para a Página Clip configurei a Header para o tamanho máximo permitido na visualização da tela*/
-/*
-.headerclip{
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    justify-content: center;
-    align-items: center;
-}*/
+/*configurando o header para não haver quebra e possívelmente não haver "rollscroll" nos dois eixos*/
 .headerclip{
     overflow-x: hidden;
     overflow-y: hidden;
 }
-
-.sectionclip{  
-    
+/*configurando a área de fundo para expor o vídeo no background*/
+.sectionclip{      
     width: 100vw;
     height: 100vh;      
     justify-content: center;    
     border-radius: 20px;
     border: 10px solid rgb(51, 134, 79) ;
-    position: fixed;
-    
+    position: fixed;    
 }
+/*dimensionando a área da nav*/
 .menunavclip{
     display: flex;
     width: 100%;
-    height: 90%;
-    
-     
+    height: 90%;     
 }
-
-
+/*dimensionando a área de exposições dos botões, utilizando o display GRID*/
 .menulistaclip{
     display: grid;
     width: 100%;
     height: 100%;
     align-content: center;
     text-align: center;
-    justify-content:center;
-    
+    justify-content:center;    
     margin-top: 20px;
     align-items: center;    
     grid-gap: 0.6em;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    
+    grid-template-rows: auto auto auto;    
 }
-
+/*estilização dos itens da lista, que constam na grid*/
 .aDaNav{
     display: grid;
     width: 155px;
@@ -76,8 +55,7 @@
     border: 3px solid rgb(51, 134, 79) ;
     font: 25px bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    align-items:center;
-    
+    align-items:center;    
     background-color: lightgreen;
     color: black;
     opacity: 0.7;
@@ -89,22 +67,19 @@
     transition: 0.4s ease-out; 
     transform: translate(0px) scale(0.9);   
 }
+/*estilizando os botões para alterar o style após a passagem do mouse porcima da imagem*/
 .aDaNav:hover{
     background-color: rgb(32, 31, 31);
     color: rgb(226, 248, 29);
     text-decoration: none;
     box-shadow: 5px 5px 5px lightgreen;
     transition: 0.3s ease-in;
-    transform: translateX(5px) scale(1);
-    
+    transform: translateX(5px) scale(1);    
     font: 20px bold;
     font: 28px bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
 }
-li{
-    list-style: none;
-}
+/*setup do vídeo utilizado como background*/
 .bgvideo{
     position: absolute;
     right: 0;
@@ -117,7 +92,7 @@ li{
     background: url(./imagens/fundogamepreto.jpg) no-repeat center;
     background-size: cover;
 }
-
+/*editando o copy paragrafo do direitos de autoria*/
 .pclip{
     margin-top: 30px;
     text-align: center;
@@ -129,7 +104,7 @@ li{
     animation: go-back 2s alternate-reverse;
     animation-iteration-count: infinite;   
 }
-
+/*criando uma animação para o paragrafo*/
 @keyframes go-back {
     0% {
         transform: translateX(-100px);
