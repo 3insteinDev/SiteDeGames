@@ -1,0 +1,140 @@
+/*Aqui estou resetando o CSS com algumas configurações básicas*/
+*{
+    border:0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+}
+
+/*Para a Página Clip configurei a Body para o tamanho máximo permitido na visualização da tela*/
+/*
+.bodyclip{
+    width: 100vw;
+    height: 100vh;
+}*/
+/*Para a Página Clip configurei a Header para o tamanho máximo permitido na visualização da tela*/
+/*
+.headerclip{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+}*/
+.headerclip{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sectionclip{  
+    
+    width: 100vw;
+    height: 100vh;      
+    justify-content: center;    
+    border-radius: 20px;
+    border: 10px solid rgb(51, 134, 79) ;
+    position: fixed;
+    
+}
+.menunavclip{
+    display: flex;
+    width: 100%;
+    height: 90%;
+    
+     
+}
+
+
+.menulistaclip{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    text-align: center;
+    justify-content:center;
+    
+    margin-top: 20px;
+    align-items: center;    
+    grid-gap: 0.6em;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    
+}
+
+.aDaNav{
+    display: grid;
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    border: 3px solid rgb(51, 134, 79) ;
+    font: 25px bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items:center;
+    
+    background-color: lightgreen;
+    color: black;
+    opacity: 0.7;
+    /*define o alinhamento dos filhos dos itens no eixo principal*/
+    justify-content: center; /*centraliza horizontalmente*/
+    justify-content: space-between;/*cria espaços entre os filhos*/
+    align-items: center; /*define o alinhamento no eixo transversal*/
+    justify-content: space-around;/*iguala as laterais*/
+    transition: 0.4s ease-out; 
+    transform: translate(0px) scale(0.9);   
+}
+.aDaNav:hover{
+    background-color: rgb(32, 31, 31);
+    color: rgb(226, 248, 29);
+    text-decoration: none;
+    box-shadow: 5px 5px 5px lightgreen;
+    transition: 0.3s ease-in;
+    transform: translateX(5px) scale(1);
+    
+    font: 20px bold;
+    font: 28px bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+li{
+    list-style: none;
+}
+.bgvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height:100%;
+    z-index: -100;
+    background: url(./imagens/fundogamepreto.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.pclip{
+    margin-top: 30px;
+    text-align: center;
+    justify-items: center;
+    color: rgb(204, 204, 203);
+    width: 100vw;
+    height: 10%;     
+    padding: 20px;
+    animation: go-back 2s alternate-reverse;
+    animation-iteration-count: infinite;   
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
