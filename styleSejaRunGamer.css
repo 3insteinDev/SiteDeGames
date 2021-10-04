@@ -6,10 +6,7 @@
     margin: 0;
     vertical-align: baseline;
     box-sizing: border-box;
-    
 }
-
-
 /*Para a Página Clip configurei a Body para o tamanho máximo permitido na visualização da tela*/
 .bodyclass{
     background-image: url(./imagens/fundogamepreto.jpg);
@@ -31,6 +28,7 @@
     justify-content: center;
     justify-items: center;   
 }
+/*configurando o main como o fundo para receber o form*/
 #main{
     align-content:center;    
     width: 750px;
@@ -38,9 +36,8 @@
     text-align: justify;
     border: 5px solid rgb(51, 134, 79) ;
     border-radius: 20px;
-    
-}
-
+    }
+/*estilo para títulos*/
 .titulo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -49,6 +46,7 @@
     color: rgb(58, 189, 79);
     padding-top: 15px;
 }
+/*editando o copy paragrafo de direitos reservados*/
 .pclip{
     margin-top: 30px;
     text-align: center;
@@ -60,16 +58,19 @@
     animation: go-back 2s alternate-reverse;
     animation-iteration-count: infinite;   
 }
+/*abertura de formulário dimensionando*/
 #formulario{
     width: 700px;
     height: 500px;
     margin: 20px;
 }
+/*dimensionando o fieldset1*/
 .fieldset1{
     background-color:  rgb(51, 134, 79);
     border: 1px solid green;
     padding: 20px
 }
+/*fonte para títulos secundários*/
 .titulosmenores{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style:oblique;
@@ -78,10 +79,12 @@
     padding: 5px;
     color: rgb(58, 189, 79);;
 }
+/*fonte para as labels*/
 label{
     font-size: 15px;
     font-family: cursive;
 }
+/*estilização do botão retornar para a página inicial*/
 .aDaNav{
     display: flex;
     width: 150px;
@@ -102,16 +105,14 @@ label{
     justify-content: space-around;/*iguala as laterais*/
     transition: 0.4s ease-out; 
     transform: translate(0px) scale(0.9);
-    
 }
-.aDaNav:hover{
-    
+/*estilização do botão retornar após passar o mouse emcima*/
+.aDaNav:hover{    
     background-color: rgb(32, 31, 31);
     box-shadow: 5px 5px 5px lightgreen;
     transition: 0.6s ease-in;
     transform: translateX(5px) scale(1);
     color: rgb(226, 248, 29);
-    
-    font: 20px bold;
+        font: 20px bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
