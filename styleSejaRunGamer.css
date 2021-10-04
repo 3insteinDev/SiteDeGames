@@ -1,3 +1,4 @@
+/*Reset básico*/
 *{
     border:0;
     outline: 0;
@@ -10,12 +11,6 @@
 
 
 /*Para a Página Clip configurei a Body para o tamanho máximo permitido na visualização da tela*/
-/*
-.bodyclip{
-    width: 100vw;
-    height: 100vh;
-}/*
-/*Para a Página Clip configurei a Header para o tamanho máximo permitido na visualização da tela*/
 .bodyclass{
     background-image: url(./imagens/fundogamepreto.jpg);
     background-size: cover;
@@ -24,6 +19,7 @@
     align-items: center;
     align-content: center;
 }
+/*Criamos o sectiongeral para deminsionar o fundo e poder distribuir */
 .sectiongeral{
     display: flex;
     width: 100%;
