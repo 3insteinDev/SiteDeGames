@@ -87,7 +87,7 @@
 .sectiongeral{
     display: block;
     width: 100%;
-    height: 600px;
+    height: 1100px;
     /*
     border-radius: 20px;
     border: 5px solid rgb(51, 134, 79) ;
@@ -135,7 +135,7 @@ h2{
 /*fundo utilizado para a lista de categorias*/
 .categorias{
     width: 20%;
-    height: 100%;    
+    height: 50%;    
     float: right;
     margin-right: 10px;
     align-items: center;
@@ -267,3 +267,118 @@ h2{
     animation: go-back 2s alternate-reverse;
     animation-iteration-count: infinite;   
 }
+
+#paleta{
+    width: 100%;
+    height: 150px;
+    display: inline;
+}
+#paleta1{
+    width: 100%;
+    height: 150px;
+    display: inline;
+}
+.variascores{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(243, 248, 211);
+    display: flex;
+    margin-top: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content:space-around;
+    align-content: center;
+    justify-items: center;
+    border: 5px solid black
+}
+.cores{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(30, 212, 69);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    border: 3px solid black;
+}
+.cores1{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(226, 248, 29);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    border: 3px solid black;
+}
+.cores2{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color:  #90EE90;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    border: 3px solid black;
+}
+.cores3{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #38b6ff;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    border: 3px solid black;
+}
+.cores4{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(51, 134, 79);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    border: 3px solid black;
+}
+.cores5{
+    float: right;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    font-size: large;
+    color: blanchedalmond;
+    border: 3px solid rgb(0, 0, 0);
+}
+
